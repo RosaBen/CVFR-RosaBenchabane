@@ -1,0 +1,117 @@
+.body {
+  text-align: center;
+  margin: 20px;
+  list-style-type: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.professionalTimeline {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.professionalPeriod {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.professionalPeriod::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.proDate {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+.proTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.proLabel {
+  display: inline-block;
+  rotate: -45deg;
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.firstPoint {
+  left: 0%;
+}
+.firstPoint .proTitle {
+  margin-top: -12rem;
+}
+
+.secondPoint {
+  left: 45.71%;
+}
+
+.secondPoint .proTitle {
+  margin-top: 2rem;
+}
+
+.thirdPoint {
+  left: 51.42%;
+}
+.thirdPoint .proTitle {
+  margin-top: -12rem;
+}
+
+.fourthPoint {
+  left: 57.13%;
+}
+
+.fourthPoint .proTitle {
+  margin-top: 2rem;
+}
+
+.fifthPoint {
+  left: 65.71%;
+}
+.fifthPoint .proTitle {
+  margin-top: -12rem;
+}
+
+.sixthPoint {
+  left: 77.14%;
+}
+
+.sixthPoint .proTitle {
+  margin-top: 2rem;
+}
+
+.seventhPoint {
+  left: 88.57%;
+}
+
+.seventhPoint .proTitle {
+  margin-top: -12rem;
+}
+
+.lastPoint {
+  left: 100%;
+}
